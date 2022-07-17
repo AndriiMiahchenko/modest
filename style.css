@@ -32,7 +32,7 @@ body {
 }
 .container .row .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .container .row .menu .menu-item a {
   text-decoration: none;
@@ -41,6 +41,7 @@ body {
   color: #a4aead;
   text-transform: uppercase;
   padding: 5px;
+  border: 2px solid #1d2126;
 }
 .container .row .menu .menu-item a:hover {
   border: 2px solid #a4aead;
@@ -140,6 +141,10 @@ body {
     display: flex;
     justify-content: flex-start;
   }
+  .container .row .menu {
+    display: flex;
+    justify-content: space-around;
+  }
   .container .row .header-form-search {
     display: flex;
     align-items: center;
@@ -210,5 +215,8 @@ body {
 @media (max-width: 768px) {
   .hidden-xs {
     display: none;
+  }
+  .menu {
+    overflow-x: scroll;
   }
 }/*# sourceMappingURL=style.css.map */

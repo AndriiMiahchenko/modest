@@ -38,7 +38,7 @@ body {
 
         .menu {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
 
             .menu-item a {
                 text-decoration: none;
@@ -47,6 +47,7 @@ body {
                 color: $menu-item-color;
                 text-transform: uppercase;
                 padding: 5px;
+                border: 2px solid $header-color;
                 }
             
             .menu-item a:hover {
@@ -125,7 +126,6 @@ body {
         .hidden-xs {
             display: none;
         }
-
     }
 
     .col-sm-1 {
@@ -156,7 +156,12 @@ body {
             .logo {
                 display: flex;
                 justify-content: flex-start;
-                }
+            }
+
+            .menu {
+                display: flex;
+                justify-content: space-around;
+            }
 
             .header-form-search {
                 display: flex;
@@ -240,5 +245,9 @@ body {
 @media(max-width: 768px) {
     .hidden-xs {
         display: none;
+    }
+
+    .menu {
+        overflow-x: scroll;
     }
 }
