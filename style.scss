@@ -191,7 +191,37 @@ body {
 }
 
 .team-members {
-    text-align: center;
+    text-align: -webkit-center;
+}
+
+.bg-name-members {
+    background-color: $bg-name-members-color;
+    height: 75px;
+    width: 263px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 15px;
+    margin-top: -4px;
+}
+
+.bg-name-members h3 {
+    padding-left: 25px;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    font-size: 16px;
+    color: $color-title-name;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.bg-name-members p {
+    padding-left: 25px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: $we-are-text-color;
 }
 
 [class*="col-"] {
@@ -316,6 +346,11 @@ body {
         flex-wrap: wrap;
     }
 
+    .non-padding {
+        padding: 0;
+
+    }
+
     .col-md-1 {
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
@@ -396,4 +431,5 @@ body {
     .non-padding {
         padding: 0;
     }
+
 }
