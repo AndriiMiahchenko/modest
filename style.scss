@@ -185,6 +185,15 @@ body {
     color: $we-are-text-color;
 }
 
+.bg-white {
+    border-top: 2px solid $bg-white-border-top-color;
+    margin-bottom: 100px;
+}
+
+.team-members {
+    text-align: center;
+}
+
 [class*="col-"] {
     padding-left: 15px;
     padding-right: 15px;
@@ -302,6 +311,11 @@ body {
         justify-content: start;
     }
 
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .col-md-1 {
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
@@ -320,6 +334,11 @@ body {
     .col-md-5 {
         flex: 0 0 41.66667%;
         max-width: 41.66667%;
+    }
+
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .col-md-7 {
@@ -356,6 +375,11 @@ body {
     .container {
         max-width: 1170px;
     }
+    
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
 }
 
 
@@ -367,5 +391,9 @@ body {
 
     .menu {
         overflow-x: scroll;
+    }
+
+    .non-padding {
+        padding: 0;
     }
 }
