@@ -214,6 +214,43 @@ body {
   color: #8d8f92;
 }
 
+.non-padding:hover > .bg-name-members {
+  background-color: #3a454d;
+}
+
+.non-padding:hover > .bg-name-members h3 {
+  color: #ffffff;
+}
+
+.non-padding:hover > .bg-name-members p {
+  color: #ffffff;
+}
+
+.position-members-img {
+  z-index: -2;
+}
+
+.position-members {
+  position: relative;
+}
+
+.social-member-link {
+  display: none;
+}
+
+.non-padding:hover > .social-member-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 3px;
+}
+
+.social-member-link > a {
+  background-color: #3a454d;
+}
+
 [class*=col-] {
   padding-left: 15px;
   padding-right: 15px;

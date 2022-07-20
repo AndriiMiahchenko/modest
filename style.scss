@@ -224,6 +224,43 @@ body {
     color: $we-are-text-color;
 }
 
+.non-padding:hover>.bg-name-members {
+    background-color: $bg-name-members-color-hover;
+}
+
+.non-padding:hover>.bg-name-members h3 {
+    color: $color-white;
+}
+
+.non-padding:hover>.bg-name-members p {
+    color: $color-white;
+}
+
+.position-members-img {
+    z-index: -2;
+}
+
+.position-members {
+    position: relative;
+}
+
+.social-member-link {
+    display: none;
+}
+
+.non-padding:hover>.social-member-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 3px;
+}
+
+.social-member-link > a {
+    background-color: $bg-name-members-color-hover;
+}
+
 [class*="col-"] {
     padding-left: 15px;
     padding-right: 15px;
@@ -348,8 +385,9 @@ body {
 
     .non-padding {
         padding: 0;
-
     }
+
+    
 
     .col-md-1 {
         flex: 0 0 8.33333%;
