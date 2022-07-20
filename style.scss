@@ -74,6 +74,7 @@ body {
     color: $color-white;
     font-size: 36px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .text {
@@ -101,6 +102,87 @@ body {
 .view-more > a:hover {
     background-color: $menu-accent-color;
     border: 3px solid $menu-accent-color;
+}
+
+.title-name {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    color: $color-title-name;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    .grey-accent {
+        display: inline-block;
+        width: 10px;
+        height: 30px;
+        background-color: $grey-accent-color;
+    }
+}
+
+.we-are-text {
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: $we-are-text-color;
+    padding-bottom: 15px;
+}
+
+.social-link {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+
+.social-bg {
+    background-color: $social-bg-color;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.social-bg:hover {
+    background-color: $social-bg-color-hover;
+}
+
+.col-arrange {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-square {
+    width: 50px;
+    height: 50px;
+    background-color: $green-square-bg-color;
+    text-align: center;
+    line-height: 50px;
+    color: $color-white;
+    border: 3px solid $green-square-bg-color;
+}
+
+.green-square:hover {
+    border: 3px solid $green-square-color-hover;
+}
+
+.item-name {
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $color-title-name;
+}
+
+.item-text {
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: $we-are-text-color;
 }
 
 [class*="col-"] {
@@ -199,6 +281,27 @@ body {
         }
     }
 
+    .block2 {
+        display: flex;
+        padding-left: 0;
+    }
+
+    .square {
+        align-items: flex-start;
+    }
+
+    .title-name {
+        text-align: start;
+    }
+
+    .we-are-text {
+        padding-bottom: 35px;
+    }
+
+    .social-link {
+        justify-content: start;
+    }
+
     .col-md-1 {
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
@@ -207,6 +310,16 @@ body {
     .col-md-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
+    }
+    
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
     }
 
     .col-md-7 {
@@ -217,6 +330,11 @@ body {
     .col-md-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
+    }
+    
+    .col-md-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
     }
     
     .col-md-12 {
