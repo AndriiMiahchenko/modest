@@ -375,6 +375,27 @@ body {
   color: #dcdfe1;
 }
 
+.footer-copy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.copyright {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.social-copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 [class*=col-] {
   padding-left: 15px;
   padding-right: 15px;
@@ -528,6 +549,15 @@ body {
   .features-img {
     width: 300px;
   }
+  .footer-copy {
+    text-align: left;
+  }
+  .copyright {
+    margin-bottom: 0;
+  }
+  .social-copy {
+    justify-content: end;
+  }
   .col-md-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -563,6 +593,10 @@ body {
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%;
+  }
+  .col-md-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
   }
   .col-md-12 {
     flex: 0 0 100%;
