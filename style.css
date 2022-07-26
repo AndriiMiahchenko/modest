@@ -253,8 +253,34 @@ body {
   display: none;
 }
 
-.photo-guide-hover:hover > .partnership-display {
+.img-width-for-mobile {
+  position: relative;
+  z-index: 2;
+}
+
+.cross {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-image: url(images/icon\ \(10\).png);
+  z-index: 10;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo-guide-hover:hover > .cross {
   display: flex;
+}
+
+.photo-guide-hover:hover > .img-width-for-mobile {
+  filter: brightness(0.6);
+}
+
+.photo-guide-hover:hover .partnership-display {
+  display: flex;
+  z-index: 10;
 }
 
 .non-padding:hover > .social-member-link {
@@ -396,6 +422,81 @@ body {
   justify-content: center;
 }
 
+.form-padding {
+  padding: 30px;
+  background-color: #ffffff;
+  border: 2px solid #ccd0d7;
+}
+
+.form-aplication {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-direction {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.text-area,
+.form-list {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: #eaeef1;
+  border: none;
+}
+
+.text-area {
+  margin-bottom: 20px;
+}
+
+.form-button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 2px solid #23b7a4;
+  background-color: #23b7a4;
+  font-weight: 700;
+  font-family: "Quattrocento Sans";
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.lable-style {
+  font-weight: 700;
+  font-family: "Quattrocento Sans";
+  font-size: 14;
+  color: #8d8f92;
+}
+
+.form-list {
+  padding: 10px 0;
+}
+
+.form-item {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.text-form {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #8d8f92;
+  margin-bottom: 40px;
+}
+
+.contacts-info {
+  font-weight: 700;
+  font-family: "Quattrocento Sans";
+  font-size: 20px;
+  color: #292f36;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
 [class*=col-] {
   padding-left: 15px;
   padding-right: 15px;
@@ -447,6 +548,9 @@ body {
   .features {
     display: flex;
     flex-wrap: wrap;
+  }
+  .form-item {
+    margin-bottom: 0;
   }
   .col-sm-1 {
     flex: 0 0 8.33333%;
@@ -557,6 +661,10 @@ body {
   }
   .social-copy {
     justify-content: end;
+  }
+  .form-padding {
+    position: relative;
+    bottom: 260px;
   }
   .col-md-1 {
     flex: 0 0 8.33333%;
